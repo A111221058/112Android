@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/gender_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/male_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男生" />
+
+        <RadioButton
+            android:id="@+id/female_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女生" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/ticket_type_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gender_radio_group"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/student_ticket_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Ticket ($400)" />
+
+        <RadioButton
+            android:id="@+id/child_ticket_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child Ticket ($250)" />
+
+        <RadioButton
+            android:id="@+id/adult_ticket_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adult Ticket ($500)" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/quantity_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ticket_type_radio_group"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        android:hint="Quantity" />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantity_edit_text"
+        android:layout_marginTop="16dp"
+        android:text="確認" />
+
+</RelativeLayout>
